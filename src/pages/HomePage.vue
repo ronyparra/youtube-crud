@@ -30,21 +30,22 @@
         </div>
       </div>
     </section>
-    <AfexDialog v-model="dialogVideo" class="dialog-video">
-      <div class="row" v-if="dialogVideo">
-        <div class="col-12 col-md-6">
-          <iframe
-            class="dialog-video__iframe"
-            width="420"
-            height="315"
-            :src="`https://www.youtube.com/embed/${videoSelected.value.items[0].id}`"
-          >
-          </iframe>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="dialog-video__text">
-            <h3>{{ videoSelected.value.items[0].snippet.title }}</h3>
-            <div>{{ videoSelected.value.items[0].snippet.description }}</div>
+    <AfexDialog v-model="dialogVideo">
+      <div class="dialog-video" v-if="dialogVideo">
+        <div class="row">
+          <div class="col-12 col-md-6 dialog-video__iframe">
+            <iframe
+              width="420"
+              height="315"
+              :src="`https://www.youtube.com/embed/${videoSelected.value.items[0].id}`"
+            >
+            </iframe>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="dialog-video__text">
+              <h3>{{ videoSelected.value.items[0].snippet.title }}</h3>
+              <div>{{ videoSelected.value.items[0].snippet.description }}</div>
+            </div>
           </div>
         </div>
       </div>

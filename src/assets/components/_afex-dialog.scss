@@ -1,5 +1,6 @@
 @import '../variable.scss';
 .afex-dialog {
+  padding: 1rem;
   border: none;
   max-width: 90%;
   border-radius: 15px;
@@ -7,6 +8,13 @@
     position: absolute;
     top: 0.8rem;
     right: 0.8rem;
+  }
+  header {
+    height: 20px;
+  }
+  &__body {
+    height: 100%;
+    overflow: auto;
   }
   &::backdrop {
     background-color: rgba(2,2,2,0.5);
