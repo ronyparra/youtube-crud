@@ -1,0 +1,19 @@
+@import '../variable.scss';
+.afex-dialog {
+  border: none;
+  max-width: 90%;
+  border-radius: 15px;
+  .close {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+  }
+  &::backdrop {
+    background-color: rgba(2,2,2,0.5);
+  }
+}
+@media (min-width: 1200px){
+  .afex-dialog {
+    max-width: 1100px;
+  }
+}

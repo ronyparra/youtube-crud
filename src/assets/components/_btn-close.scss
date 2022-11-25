@@ -1,0 +1,30 @@
+@import "../variable.scss";
+.btn-close {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  &:hover {
+    color: black;
+    background-color: white;
+  }
+}
+
+.btn-close-text {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+}

@@ -1,0 +1,110 @@
+@import './variable.scss';
+
+html, body {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: $primary;
+}
+
+label {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+}
+
+#app {
+  min-height: 100vh;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.vue-notification-group {
+  // Esto es un css de un componente externo
+  top: 5px !important
+}
+
+.home-page {
+  &__form {
+    .form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+    .afex-btn {
+      margin-left: -5px;
+      border-radius: 0px 10px 10px 0px;
+    }
+  }
+  &__items {
+    .img-content  {
+      position: relative;
+      text-align: center;
+      cursor: pointer;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+      }
+      .time {
+        position: absolute;
+        bottom: 0.8rem;
+        right: 0.8rem;
+        border-radius: 5px;
+        padding: 3px;
+        background-color: rgba(0,0,0,0.6);
+        span {
+          padding: 3px;
+          color: white;
+        }
+      }
+      .close {
+        position: absolute;
+        top: 0.8rem;
+        right: 0.8rem;
+      }
+    }
+  }
+
+  .dialog-video {
+    &__iframe {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      margin: auto;
+    }
+    &__text {
+      font-family: 'Quicksand', sans-serif;
+    }
+  }
+  .dialog-delete {
+    h3 {
+      font-family: 'Quicksand', sans-serif;
+    }
+    width: 100%;
+    &__actions {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+    button {
+      margin-left: 1rem;
+    }
+  }
+}
+
