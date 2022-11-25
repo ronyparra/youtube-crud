@@ -3,9 +3,9 @@
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Demo
-[youtube-crud.ronyparra.com](https://youtube-crud.ronyparra.com/){:target="_blank" rel="noopener"}
+[youtube-crud.ronyparra.com](https://youtube-crud.ronyparra.com/)
 
-[![Alt text](https://user-images.githubusercontent.com/48213049/203998521-a6f42b59-a4a7-41b3-89f7-1d1815b6fabf.png)](https://youtu.be/bANmMoUpWm8)
+[![Alt text](https://user-images.githubusercontent.com/48213049/203998521-a6f42b59-a4a7-41b3-89f7-1d1815b6fabf.png)](https://youtu.be/bANmMoUpWm8){:target="_blank" rel="noopener"}
 
 ## Recommended IDE Setup
 
