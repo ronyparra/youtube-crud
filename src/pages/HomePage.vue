@@ -150,7 +150,7 @@ const loadVideos = async () => {
 
 const saveVideo = async (data) => {
   try {
-    firebase.saveVideo(data);
+    await firebase.saveVideo(data);
     loadVideos();
     urlVideo.value = "";
     notify({
