@@ -13,7 +13,7 @@
   &:hover {
     background-color: $white;
     color: $secondary;
-    border: 2px solid $secondary;
+    border: 1px solid $secondary;
   }
 }
 
@@ -27,5 +27,9 @@
   cursor: pointer;
   background-color: $white;
   color: $secondary;
-  border: 2px solid $secondary;
+  border: 1px solid $secondary;
+  &:hover {
+    background-color: black;
+    color: $white;
+  }
 }
