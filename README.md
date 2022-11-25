@@ -1,6 +1,6 @@
 # Youtube crud
 
-This template should help get you started developing with Vue 3 in Vite.
+Youtube crud using firebase and youtube javascript api
 
 ## Demo
 [youtube-crud.ronyparra.com](https://youtube-crud.ronyparra.com/)
