@@ -1,7 +1,7 @@
 import dayjs from "../services/days.service";
 
 const vimeo = async (id) => {
-  const vimeoUrl = `http://vimeo.com/api/v2/video/${id}.json`;
+  const vimeoUrl = `https://vimeo.com/api/v2/video/${id}.json`;
   const vimeoData = await fetch(vimeoUrl).then((res) => res.json());
   const { description, duration, thumbnail_medium, title } = vimeoData[0];
   const durationMinutes = dayjs(duration * 1000).format("mm:ss");
