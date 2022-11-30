@@ -69,8 +69,6 @@ import youtubeProvider from "../providers/youtube";
 import vimeoProvider from "../providers/vimeo";
 import message from "../services/message.service";
 
-import dayjs from "dayjs";
-import duration from "dayjs/plugin/duration";
 import { ref, reactive, onMounted } from "vue";
 import AfexBtn from "../components/AfexBtn.vue";
 import AfexTextField from "../components/AfexTextField.vue";
@@ -80,8 +78,6 @@ import BtnClose from "../components/BtnClose.vue";
 const [YOUTUBE, VIMEO, DEFAULT] = ["YOUTUBE", "VIMEO", "DEFAULT"];
 const notFound =
   "No se pudo obtener el video, vuelva a ingresar el link e intente nuevamente";
-
-dayjs.extend(duration);
 
 const urlVideo = ref();
 const error = ref(null);
