@@ -61,6 +61,86 @@
         </div>
       </div>
     </AfexDialog>
+    <div>
+      <form action="" class="laia-capture-form">
+        <!-- Nombre -->
+        <div>
+          <label for="name-captured">Nombre</label>
+          <input
+            id="name-captured"
+            type="text"
+            name="Nombre"
+            class="laia-capture-field"
+            data-laia-field-map="fullname"
+          />
+        </div>
+        <!-- Telefono -->
+        <div>
+          <label for="phone-captured">Teléfono</label>
+          <input
+            id="phone-captured"
+            type="text"
+            name="Telefono"
+            class="laia-capture-field"
+            data-laia-field-map="phone"
+          />
+        </div>
+        <!-- TipoCliente -->
+        <div>
+          <label for="customer-captured">Tipo de cliente</label>
+          <select
+            id="customer-captured"
+            name="TipoCliente"
+            class="laia-capture-field"
+          >
+            <option value="particular">particular</option>
+            <option value="empresa">empresa</option>
+          </select>
+        </div>
+        <!-- Horario -->
+        <div>
+          <div>Horario</div>
+          <input
+            id="schedule-captured-m"
+            value="m"
+            type="radio"
+            name="Horario"
+            class="laia-capture-field"
+          />
+          <label for="schedule-captured-m">Mañana</label>
+          <br />
+          <input
+            id="schedule-captured-t"
+            value="t"
+            type="radio"
+            name="Horario"
+            class="laia-capture-field"
+          />
+          <label for="schedule-captured-t">Tarde</label>
+        </div>
+        <!-- AceptaTerminos -->
+        <div>
+          <input
+            id="terms-captured"
+            type="checkbox"
+            name="policy"
+            data-laia-field-map="laia-policy"
+            class="laia-capture-field laia-consent-capture"
+          />
+          <label for="terms-captured">Acepto los terminos y condiciones</label>
+        </div>
+        <!-- Submit -->
+        <div>
+          <button
+            class="laia-capture-submit"
+            type="button"
+            click="event => console.log(event)"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </template>
 <script setup>
